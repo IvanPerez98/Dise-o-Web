@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kriwano.com</title>
+    <link rel="stylesheet" type="text/css" href="css/mi_estilo.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <header class="lila">
+        <h1>Responsivo</h1>
+        <nav>
+          <div class="arriba">INICIO</div>
+          <div class="arriba">ACERCA DE</div>
+          <div class="arriba">CONTACTO</div>
+        </nav>
+      </header>
+      <main>
+        <section class="main_text">
+          <div>
+            <h3>BIENVENIDO A LA PAGINA DE</h3>
+            <h1 class="lila">_KRIWANO_</h1>
+          </div>
+          <div>
+            <p>
+              En reformas.
+            </p>
+            <p>Stay in touch.
+            </p>
+          </div>
+        </section>
+        <section class="images">
+          <img src="img/ruso.png" /> <img src="img/diplo.jpg" />
+          <img src="img/lava.png" /> <img src="img/beti.jpg" />
+          <img src="img/tanque.png" /> <img src="img/wwe.png" />
+          <img src="img/guardado.png" /> <img class="hidden" src="img/joker.png" />
+          <img src="img/gato.jpg" />
+        </section>
+      </main>
+      <section class="new">
+        <h2 class="verde">Noticias</h2>
+        <article>
+          <h4 >22 de Enero</h3>
+          <h3 class="lila">Deportes</h3>
+          <p>
+            Ganó el betis
+          </p>
+        </article>
+        <article>
+          <h4>22 de Enero</h>
+          <h3 class="lila">Ciencia</h3>
+          <p>
+            Coronavirus
+          </p>
+        </article>
+        <article>
+          <h4>22 de Enero</h4>
+          <h3 class="lila">Internacional</h3>
+          <p>
+            Trump malo
+          </p>
+        </article>
+      </section>
+    </div>
+    <script>
+        $(function() {
+            $(".icon").click(function() {
+            $(".new").toggle();
+            });
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            if (anchura > 576) {
+                $(".new").show();
+            }
+            });
+        });
+    </script>
+  </body>
+</html>
